@@ -1,3 +1,3 @@
-# ICM site
+# Club site
 
 Getting Started
