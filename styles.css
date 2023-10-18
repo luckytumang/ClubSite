@@ -1,0 +1,312 @@
+body {
+  display: grid;
+  color: #FFFFFF;
+  background-color: #001EA0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-bottom: 8px;
+  padding: 4px;
+}
+
+.header {
+  grid-area: header;
+  background-color: #001EA0;
+  /* opacity: 0.95; */
+  /* z-index: 99; */
+}
+
+.navbar {
+  background-color: #001EA0;
+}
+
+.nav-link {
+  color: #FFFFFF;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-logo {
+  color: #FFFFFF;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 1rem;
+  size: 3rem;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* This inverts the colors, making a white icon black and vice versa */
+}
+
+img {
+  width: 100%;
+  /* height: auto; */
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links i {
+  margin: 0 10px;
+  padding: 0;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+.hero {
+  grid-area: hero;
+  /* background-image: url('/img/Coroniamo Sogno.jpg'); */
+  background-image: url('/img/ICM Group.jpg');
+  padding: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#heroname {
+  font-size: 4rem;
+  font-weight: bolder;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: 4px 4px 4px #000000;
+}
+
+.article {
+  grid-area: article;
+  padding: 20px;
+  text-align: center;
+  /* background-color: #EBEBEB; */
+  background-image: url('/img/InterClub.jpg');
+  background-size: contain;
+  background-position: center;
+}
+
+#name {
+  color: #FFFFFF;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+#subname {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000000;
+  margin-bottom: 3rem;
+}
+
+.mainbuttons {
+  display: flex;
+  justify-content: center;
+}
+
+#mainlink {
+  text-decoration: none;
+  }
+
+#join {
+  background-color: #FFDC3C;
+  color: #001EA0;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  align-self: flex-end;
+  transition: all 400ms ease-in-out;
+}
+
+#join:hover {
+  /* background-image: url('/img/InterClub.jpg');
+  background-size: cover;
+  background-position: center; */
+  background-color: #001EA0;
+  color: #FFFFFF;
+  font-weight: bold;
+  /* border-color: #FFDC3C; */
+  border: solid #FFFFFF;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.aside {
+  grid-area: aside;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+#recent {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.social {
+  grid-area: social;
+  padding: 20px;
+  text-align: center;
+  background-image: url('/img/Coroniamo Sogno.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#touch {
+  margin-bottom: 10rem;
+  color: #FFFFFF;
+  font-weight: bolder;
+  text-shadow: 4px 4px 4px #000000;
+
+}
+
+#social {
+  /* size: initial; */
+  background-color: #001EA0;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 1rem;
+  transition: all 500ms ease-in-out;
+}
+
+#social:hover {
+  background-color: #FFFFFF;
+  color: #001EA0;
+  font-weight: bold;
+  border: solid #001EA0;
+}
+
+.team {
+  grid-area: team;
+  padding: 20px;
+  text-align: center;
+  background-color: #001EA0;
+  color: #FFFFFF;
+}
+
+.image {
+  grid-area: image;
+  padding: 20px;
+  text-align: center;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.board {
+  grid-area: board;
+  padding: 20px;
+  text-align: center;
+  background-color: #001EA0;
+  color: #FFFFFF;
+}
+
+.grid-container-home {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows:
+  minmax(10vh, 10vh) minmax(20vh, 60vh) auto;
+  grid-template-areas:
+    'header header header'
+    'hero hero hero'
+    'article article aside'
+    'social social social'
+    'team team team'
+    'footer footer footer'
+}
+
+@media (max-width: 800px) {
+  .grid-container-home {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(5vh, 10vh) minmax(100px, 60vh) auto;
+    grid-template-areas:
+      'header'
+      'hero'
+      'article'
+      'aside'
+      'social'
+      'team'
+      'footer';
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+}
+
+.grid-container-board {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-rows: minmax(50px, 100px) auto;
+  grid-template-areas:
+    'header header header'
+    'article article image'
+    'board board board'
+    'footer footer footer'
+  }
+
+@media (max-width: 600px) {
+  .grid-container-board {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'header'
+      'article'
+      'image'
+      'board'
+      'footer';
+  }
+}
