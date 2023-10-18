@@ -80,7 +80,6 @@ img {
 
 .hero {
   grid-area: hero;
-  /* background-image: url('/img/Coroniamo Sogno.jpg'); */
   background-image: url('/img/ICM Group.jpg');
   padding: 20px;
   background-position: center;
@@ -160,7 +159,6 @@ img {
   background-color: #001EA0;
   color: #FFFFFF;
   font-weight: bold;
-  /* border-color: #FFDC3C; */
   border: solid #FFFFFF;
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
