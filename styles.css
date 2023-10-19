@@ -79,7 +79,7 @@ img {
 
 .hero {
   grid-area: hero;
-  background-image: url('/img/ICM Group.jpg');
+  background-image: url('img/ICM Group.jpg');
   padding: 20px;
   background-position: center;
   background-repeat: no-repeat;
