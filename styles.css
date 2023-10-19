@@ -14,13 +14,12 @@ p {
 
 .header {
   grid-area: header;
-  background-color: #001EA0;
-  /* opacity: 0.95; */
-  /* z-index: 99; */
+  background-color: #000000;
 }
 
 .navbar {
-  background-color: #001EA0;
+  background-color: #000000;
+  opacity: 0.95;
 }
 
 .nav-link {
@@ -93,7 +92,7 @@ img {
 }
 
 #heroname {
-  font-size: 4rem;
+  font-size: clamp(1.5rem, 5vw + 2.5rem , 10rem);
   font-weight: bolder;
   text-align: center;
   vertical-align: middle;
@@ -104,7 +103,6 @@ img {
   grid-area: article;
   padding: 20px;
   text-align: center;
-  /* background-color: #EBEBEB; */
   background-image: url('/img/InterClub.jpg');
   background-size: contain;
   background-position: center;
@@ -112,7 +110,7 @@ img {
 
 #name {
   color: #FFFFFF;
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 5vw + 1.5rem , 4rem);;
   font-weight: bolder;
   text-align: center;
   text-shadow: 2px 2px 2px #000000;
@@ -120,7 +118,7 @@ img {
 
 #subname {
   color: #FFFFFF;
-  font-size: 2.5rem;
+  font-size: clamp(1.25rem, 5vw + 1rem , 3rem);;
   font-weight: bold;
   text-align: center;
   text-shadow: 2px 2px 2px #000000;
@@ -142,14 +140,13 @@ img {
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
   font-size: 1.5rem;
   font-weight: bold;
-  padding-inline: 20px;
-  padding-block: 10px;
+  padding: 1rem;
   border-radius: 10px;
   border: none;
   cursor: pointer;
   text-align: center;
   align-self: flex-end;
-  transition: all 400ms ease-in-out;
+  transition: all 350ms ease-in-out;
 }
 
 #join:hover {
@@ -159,7 +156,7 @@ img {
   background-color: #001EA0;
   color: #FFFFFF;
   font-weight: bold;
-  border: solid #FFFFFF;
+  /* border: solid #FFFFFF; */
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
@@ -212,10 +209,10 @@ img {
   background-color: #001EA0;
   color: #FFFFFF;
   font-weight: bold;
+  padding: 10px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  padding: 10px;
   margin-right: 1rem;
   transition: all 500ms ease-in-out;
 }
@@ -224,7 +221,7 @@ img {
   background-color: #FFFFFF;
   color: #001EA0;
   font-weight: bold;
-  border: solid #001EA0;
+  /* border: solid #001EA0; */
 }
 
 .team {
