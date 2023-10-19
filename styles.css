@@ -1,7 +1,7 @@
 body {
   display: grid;
-  color: #FFFFFF;
   background-color: #001EA0;
+  color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
@@ -31,7 +31,7 @@ p {
 
 .navbar-brand {
   color: #FFFFFF;
-  font-size: 2rem;
+  font-size: clamp(1.25rem, 5vw + 1rem , 2.5rem);
   font-weight: bold;
   justify-content: center;
   align-items: center;
@@ -110,7 +110,7 @@ img {
 
 #name {
   color: #FFFFFF;
-  font-size: clamp(1.5rem, 5vw + 1.5rem , 4rem);;
+  font-size: clamp(1.5rem, 5vw + 1.5rem , 4rem);
   font-weight: bolder;
   text-align: center;
   text-shadow: 2px 2px 2px #000000;
@@ -118,7 +118,7 @@ img {
 
 #subname {
   color: #FFFFFF;
-  font-size: clamp(1.25rem, 5vw + 1rem , 3rem);;
+  font-size: clamp(1.25rem, 5vw + 1rem , 3rem);
   font-weight: bold;
   text-align: center;
   text-shadow: 2px 2px 2px #000000;
@@ -133,31 +133,31 @@ img {
 #mainlink {
   text-decoration: none;
   }
+  
+  #join {
+    background-color: #FFDC3C;
+    color: #001EA0;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    padding-inline: 20px;
+    border-radius: 10px;
+    border: solid #FFDC3C;
+    cursor: pointer;
+    text-align: center;
+    align-self: flex-end;
+    transition: all 350ms ease-in-out;
+  }
 
-#join {
-  background-color: #FFDC3C;
-  color: #001EA0;
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 1rem;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  align-self: flex-end;
-  transition: all 350ms ease-in-out;
-}
-
-#join:hover {
-  /* background-image: url('/img/InterClub.jpg');
+  #join:hover {
+    /* background-image: url('/img/InterClub.jpg');
   background-size: cover;
   background-position: center; */
-  background-color: #001EA0;
+  /* border: solid #FFFFFF; */
+  background-color: transparent;
   color: #FFFFFF;
   font-weight: bold;
-  /* border: solid #FFFFFF; */
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
 .aside {
@@ -201,19 +201,17 @@ img {
   color: #FFFFFF;
   font-weight: bolder;
   text-shadow: 4px 4px 4px #000000;
-
 }
 
 .social-button {
-  /* size: initial; */
   background-color: #001EA0;
   color: #FFFFFF;
   font-weight: bold;
   padding: 10px;
+  margin-right: 1.25rem;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  margin-right: 1rem;
   transition: all 500ms ease-in-out;
 }
 
@@ -230,6 +228,14 @@ img {
   text-align: center;
   background-color: #001EA0;
   color: #FFFFFF;
+}
+
+.contact {
+  grid-area: contact;
+  padding: 20px;
+  text-align: center;
+  background-color: #FFDC3C;
+  color: #000000;
 }
 
 .image {
@@ -259,6 +265,7 @@ img {
     'article article aside'
     'social social social'
     'team team team'
+    'contact contact contact'
     'footer footer footer'
 }
 
@@ -275,11 +282,6 @@ img {
       'team'
       'footer';
   }
-
-  .navbar-brand {
-    font-size: 1.5rem;
-  }
-
 }
 
 .grid-container-board {
