@@ -31,7 +31,7 @@ p {
 
 .navbar-brand {
   color: #FFFFFF;
-  font-size: clamp(1.25rem, 5vw + 1rem , 2.5rem);
+  font-size: clamp(1rem, 5vw + 1rem , 2.5rem);
   font-weight: bold;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@ p {
 
 .nav-logo {
   color: #FFFFFF;
-  display: block;
+/*   display: block; */
   justify-content: center;
   align-items: center;
   margin-inline: 1rem;
