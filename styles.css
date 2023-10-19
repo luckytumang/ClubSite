@@ -103,7 +103,7 @@ img {
   grid-area: article;
   padding: 20px;
   text-align: center;
-  background-image: url('/img/InterClub.jpg');
+  background-image: url('img/InterClub.jpg');
   background-size: contain;
   background-position: center;
 }
@@ -151,10 +151,6 @@ img {
   }
 
   #join:hover {
-    /* background-image: url('/img/InterClub.jpg');
-  background-size: cover;
-  background-position: center; */
-  /* border: solid #FFFFFF; */
   background-color: transparent;
   color: #FFFFFF;
   font-weight: bold;
@@ -181,7 +177,7 @@ img {
   grid-area: social;
   padding: 20px;
   text-align: center;
-  background-image: url('/img/Coroniamo Sogno.jpg');
+  background-image: url('img/Coroniamo Sogno.jpg');
   background-size: cover;
   background-attachment: fixed;
   display: flex;
