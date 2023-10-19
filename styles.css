@@ -207,7 +207,7 @@ img {
 
 }
 
-#social {
+.social-button {
   /* size: initial; */
   background-color: #001EA0;
   color: #FFFFFF;
@@ -220,7 +220,7 @@ img {
   transition: all 500ms ease-in-out;
 }
 
-#social:hover {
+.social-button:hover {
   background-color: #FFFFFF;
   color: #001EA0;
   font-weight: bold;
