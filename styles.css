@@ -46,7 +46,7 @@ p {
 
 .nav-logo {
   color: #FFFFFF;
-  display: block;
+/*   display: block; */
   justify-content: center;
   align-items: center;
   margin-inline: 1rem;
