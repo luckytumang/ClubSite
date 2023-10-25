@@ -86,7 +86,7 @@
   </section>
 
   <section class="team">
-    <h2 id="team">About us</h2>
+    <h2 id="team">Who we Are</h2>
     <p>150+ Inter fans from around the globe in Manhattan NYC, come together to support OUR Inter</p>
     <p>From watching our Nerazzurri together, meeting our Inter Legends, representing our club, and flying to the stadium to live those unforgettable moments</p>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, qui. Asperiores commodi maxime nesciunt rerum placeat praesentium unde tempore dolorem, autem architecto esse necessitatibus saepe pariatur minus recusandae possimus laudantium.</p>
@@ -95,9 +95,17 @@
   <section class="contact">
     <h2 id="contact">Get in Touch</h2>
     <div class="contact-form">
+      <!-- <label for="form-name">Name</label> -->
       <input class="contact-form-items" autocomplete="off" aria-label="Name" id="form-name" name="name" placeholder="Name" type="text">
+      <!-- <label for="form-email">Email</label> -->
       <input class="contact-form-items" autocomplete="off" aria-label="Email" id="form-email" name="email" placeholder="Email" type="text">
-      <input class="contact-form-items" autocomplete="off" aria-label="Subject" id="form-subject" name="subject" placeholder="Subject" type="text">
+      <!-- <label for="form-subject">Subject</label> -->
+      <select class="contact-form-items" autocomplete="off" aria-label="Subject" id="form-subject" name="subject" placeholder="Subject" type="text">
+        <option value="membership" >Membership</option>
+        <option value="match">Ticketing</option>
+        <option value="question">Other Questions</option>
+      </select>
+      <!-- <label for="form-message">Message</label> -->
       <input class="contact-form-items" autocomplete="off" aria-label="Message" id="form-message" name="message" placeholder="Message" type="text">
     </div>
     <button class="social-button" aria-label="Submit" id="form-submit">Submit</button>

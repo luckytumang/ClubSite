@@ -12,7 +12,7 @@ body {
   display: grid;
   background-color: #001EA0;
   color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
 p {
@@ -237,7 +237,8 @@ p {
 #contact {
   color: #001EA0;
   font-weight: bold;
-  justify-self: center;
+  padding-bottom: 1rem;
+  /* justify-self: center; */
 }
 
 .contact-form {
