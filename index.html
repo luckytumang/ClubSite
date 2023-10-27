@@ -7,60 +7,62 @@
 
   <title>Inter Club Manhattan - Home</title>
   <link rel="icon" href="img/favicon.ico">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/cf0d147391.js" crossorigin="anonymous"></script>
-  
   <link rel="stylesheet" href="styles.css">
+
+  <script src="https://kit.fontawesome.com/cf0d147391.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="grid-container-home">
 
-  <header class="header">
-    <nav class="navbar fixed-top navbar-expand-md">
-        <div class="container-fluid">
-            <div class="nav-logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 56 56" class="css-0"><path fill="currentColor" fill-rule="evenodd" d="M0 28C0 12.533 12.533 0 28 0s28 12.533 28 28-12.533 28-28 28S0 43.467 0 28zm4 0c0 13.253 10.747 24 24 24s24-10.747 24-24S41.253 4 28 4 4 14.747 4 28zm37.121-9.16l1.894-4.053A19.915 19.915 0 0148 28.007c0 5.353-2.106 10.22-5.533 13.806l-.52-5.966A15.93 15.93 0 0044.001 28c0-3.407-1.066-6.56-2.88-9.16zM30.027 43.873V12.127c1.68.213 3.28.686 4.753 1.38l1.694-3.627A19.91 19.91 0 0028 8c-3.026 0-5.9.673-8.473 1.88l1.693 3.627a16.035 16.035 0 014.814-1.387v31.76a16.003 16.003 0 01-4.514-1.247l-.366 4.167c2.133.773 4.44 1.2 6.846 1.2a19.9 19.9 0 006.874-1.213l-.367-4.167a15.728 15.728 0 01-4.48 1.253zM8 28a19.91 19.91 0 014.986-13.213l1.894 4.06A15.915 15.915 0 0012 28c0 2.867.753 5.553 2.073 7.873l-.52 5.954A19.911 19.911 0 018 28zm30.514-8.367l2.98-6.393a19.913 19.913 0 00-3.28-2.433L32.04 24.06v9.467l3.094-6.634L36.8 45.967a20.028 20.028 0 003.8-2.434l-2.086-23.9zM17.765 10.82l6.274 13.46h.013v9.467l-3.18-6.82-1.666 19.04a20.018 20.018 0 01-3.8-2.434l2.073-23.74.006-.113-2.993-6.42c1-.92 2.1-1.74 3.273-2.44z" clip-rule="evenodd"></path></svg>
-            </div>
-            <a class="navbar-brand" href="index.html">Inter Club Manhattan</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Membership</a>
-                    </li>
-                    <li class="nav-item me-auto">
-                        <a class="nav-link" href="#">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </ul>
-            </div>
+  <header class="header" id="navbar">
+    <nav class="navbar-container container">
+      <a class="home-link" href="/" title="IC Manhattan">
+        <div class="navbar-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 56 56" class="css-0"><path fill="currentColor" fill-rule="evenodd" d="M0 28C0 12.533 12.533 0 28 0s28 12.533 28 28-12.533 28-28 28S0 43.467 0 28zm4 0c0 13.253 10.747 24 24 24s24-10.747 24-24S41.253 4 28 4 4 14.747 4 28zm37.121-9.16l1.894-4.053A19.915 19.915 0 0148 28.007c0 5.353-2.106 10.22-5.533 13.806l-.52-5.966A15.93 15.93 0 0044.001 28c0-3.407-1.066-6.56-2.88-9.16zM30.027 43.873V12.127c1.68.213 3.28.686 4.753 1.38l1.694-3.627A19.91 19.91 0 0028 8c-3.026 0-5.9.673-8.473 1.88l1.693 3.627a16.035 16.035 0 014.814-1.387v31.76a16.003 16.003 0 01-4.514-1.247l-.366 4.167c2.133.773 4.44 1.2 6.846 1.2a19.9 19.9 0 006.874-1.213l-.367-4.167a15.728 15.728 0 01-4.48 1.253zM8 28a19.91 19.91 0 014.986-13.213l1.894 4.06A15.915 15.915 0 0012 28c0 2.867.753 5.553 2.073 7.873l-.52 5.954A19.911 19.911 0 018 28zm30.514-8.367l2.98-6.393a19.913 19.913 0 00-3.28-2.433L32.04 24.06v9.467l3.094-6.634L36.8 45.967a20.028 20.028 0 003.8-2.434l-2.086-23.9zM17.765 10.82l6.274 13.46h.013v9.467l-3.18-6.82-1.666 19.04a20.018 20.018 0 01-3.8-2.434l2.073-23.74.006-.113-2.993-6.42c1-.92 2.1-1.74 3.273-2.44z" clip-rule="evenodd"></path></svg>
         </div>
+        <div class="navbar-brand">Inter Club Manhattan</div>
+      </a>
+
+      <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle menu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+
+        <!-- <i class="fa-solid fa-bars"></i> -->
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+      </button>
+
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+          <ul class="navbar-links">
+              <li class="navbar-item">
+                <a class="navbar-link" href="/">Home</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link" href="#contact">Membership</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link" href="#">Shop</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link" href="#ourteam">About</a>
+              </li>
+          </ul>
+      </div>
     </nav>
   </header>
   
   <section class="hero">
-    <h1 id="heroname">I M INTER</h1> 
+    <h1 id="heroname">I M <span id="inter">INTER</span>
+      <!-- <span id="manhattan">MANHATTAN</span> -->
+    </h1> 
   </section>
 
   <article class="article">
     <h2 id="name">Inter Club Manhattan</h2>
     <div id="subname">Riccardo Ferri</div>
+    
     <div class="mainbuttons">
-      <a id="mainlink" href="join.html">
+      <a id="mainlink" href="#contact">
         <button id="join">Join Now</button>
       </a>
     </div>
@@ -68,8 +70,9 @@
 
   <aside class="aside">
     <h2 id="recent">We are the Manhattan Interisti</h2>
-    <p>Welcome to the home of ICM, your Inter Club in the Big Apple! 🍎🗽</p>
-    <p>The biggest and fastest growing Inter Club in the USA</p>
+    <p>200+ Brothers of the World in Manhattan NYC, come together to support OUR Inter</p>
+    <p>Welcome to the home of IC Manhattan, your Inter Club in the Big Apple! 🍎🗽</p>
+    <p>Join the biggest and fastest growing Inter Club in the USA</p>
   </aside>
 
   <section class="social">
@@ -85,12 +88,11 @@
     </div>
   </section>
 
-  <section class="team">
-    <h2 id="team">Who we Are</h2>
-    <p>200+ Brothers of the World in Manhattan NYC, come together to support OUR Inter</p>
+  <section class="team" id="ourteam">
+    <h2 id="team">What We Do</h2>
+    <p>Live and share you passion towards our glorious Club with all brothers and sisters of the world Enjoy exclusive benefis dedicated only to Inter Club members</p> 
     <p>From watching our Nerazzurri together, meeting our Inter Legends, representing our club, and flying to the stadium to live those unforgettable moments</p>
-    <p>Live and share you passion towards our glorious Club with all brothers and sisters of the world</p> 
-    <p>Enjoy exclusive benefis dedicated only to Inter Club members such as: Discounts on merchandising and ticketing, Two Special Matches with lots of dedicated activities, Unforgettable experiences with Players and Legends, Contest, events, partners' offers and much more!</p>
+    <p> such as: Discounts on merchandising and ticketing, Two Special Matches with lots of dedicated activities, Unforgettable experiences with Players and Legends, Contest, events, partners' offers and much more!</p>
   </section>
 
   <section class="contact">
@@ -140,7 +142,7 @@
     </div>
     <div>©2023 - Made with 💙🖤&nbsp; by Orlen & team from</div>
     <div>Inter Club Manhattan Riccardo Ferri</div>
-</footer>
+  </footer>
 
   <script src="index.js"></script>
 
