@@ -7,8 +7,8 @@
 
   <title>Inter Club Manhattan : Home</title>
   <link rel="icon" href="img/favicon.ico">
-  <link rel="stylesheet" href="styles.css">
 
+  <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/cf0d147391.js" crossorigin="anonymous"></script>
 </head>
 
@@ -32,16 +32,16 @@
       <div id="navbar-menu" aria-labelledby="navbar-toggle">
           <ul class="navbar-links">
               <li class="navbar-item">
-                <a class="navbar-link" href="#">Home</a>
+                <a class="navbar-link" href="index.html">Home</a>
               </li>
               <li class="navbar-item">
-                <a class="navbar-link" href="#contact">Membership</a>
+                <a class="navbar-link" href="#member">Membership</a>
               </li>
               <li class="navbar-item">
                 <a class="navbar-link" href="#shop">Shop</a>
               </li>
               <li class="navbar-item">
-                <a class="navbar-link" href="#ourteam">About</a>
+                <a class="navbar-link" href="#about">About</a>
               </li>
           </ul>
       </div>
@@ -59,8 +59,8 @@
     <div id="subname">Riccardo Ferri</div>
     
     <div class="mainbuttons">
-      <a id="mainlink" href="#contact">
-        <button id="join">Join Now</button>
+      <a id="mainlink" href="#member">
+        <button id="join" title="Membership">Join Now</button>
       </a>
     </div>
   </article>
@@ -72,23 +72,9 @@
     <p>Join the biggest and fastest growing Inter Club in the USA</p>
   </aside>
 
-  <section class="social">
-    <h2 id="touch">Connect on socials for the latest from YOUR Inter Club</h2>
-
-    <div class="social-buttons">
-      <a href="https://www.instagram.com/interclubmanhattannyc/" target="_blank" rel="noopener noreferrer">
-        <button class="social-button">Instagram</button>
-      </a>
-      <a href="https://www.facebook.com/InterClubManhattan/" target="_blank" rel="noopener noreferrer">
-        <button class="social-button">Facebook</button>
-      </a>
-    </div>
-  </section>
-
   <section class="team" id="ourteam">
     <h2 id="team">What We Do</h2>
     <p>Live and share you passion towards our glorious Club with your brothers and sisters of the world, and enjoy exclusive benefis dedicated only to Inter Club members</p> 
-    <p>From watching our Nerazzurri together, meeting our Inter Legends, representing our club, and flying to the stadium to live those unforgettable moments</p>
     <div class="benefits">
       <p>Ticketing</p>
       <p>Discounts on merchandising</p>
@@ -97,24 +83,58 @@
       <p>Contest, events, partners' offers and much more!</p>
     </div>
   </section>
-
-  <section class="contact">
-    <h2 id="contact">Get in Touch</h2>
-    <div class="contact-form">
-      <!-- <label for="form-name">Name</label> -->
-      <input class="contact-form-items" autocomplete="off" aria-label="Name" id="form-name" name="name" placeholder="Name" type="text">
-      <!-- <label for="form-email">Email</label> -->
-      <input class="contact-form-items" autocomplete="off" aria-label="Email" id="form-email" name="email" placeholder="Email" type="text">
-      <!-- <label for="form-subject">Subject</label> -->
-      <select class="contact-form-items" autocomplete="off" aria-label="Subject" id="form-subject" name="subject" placeholder="Subject" type="text">
-        <option value="membership" >Membership</option>
-        <option value="match">Ticketing</option>
-        <option value="question">Other Questions</option>
-      </select>
-      <!-- <label for="form-message">Message</label> -->
-      <input class="contact-form-items" autocomplete="off" aria-label="Message" id="form-message" name="message" placeholder="Message" type="text">
+  
+  <section class="member">
+    <h2 id="member">Join Us</h2>
+    <img class="member-image" src="img/Dominet Milan.jpg" alt="Dominet Milan">
+    <div class="steps-container">
+      <p class="steps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium voluptatum pariatur eligendi excepturi fuga!</p>
+      <p class="steps">A quibusdam nesciunt laudantium, officiis ullam provident nostrum, dolor et ut quos magnam modi accusamus!</p>
+      <p class="steps">Quis mollitia praesentium, vel aut incidunt eum eos velit laborum. Nemo magni optio voluptatem commodi?</p>
+      <p class="steps">Molestiae libero doloribus asperiores nostrum dolorum quos ab, quisquam voluptates aspernatur animi corrupti beatae repudiandae.</p>
     </div>
-    <button class="social-button" aria-label="Submit" id="form-submit">Submit</button>
+  </section>
+  
+  <section class="social">
+    <h2 id="touch">Connect on socials for the latest from YOUR Inter Club</h2>
+
+    <div>
+      <ul class="social-links social-main-container">
+        <li>
+          <a href="https://www.instagram.com/interclubmanhattannyc" aria-label="Instagram link" target="_blank" rel="noopener noreferrer" title="Instagram">
+            <i class="fab fa-instagram social-button-large"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/interclubmanhattan" aria-label="Facebook link" target="_blank" rel="noopener noreferrer" title="Facebook">
+            <i class="fab fa-facebook social-button-large"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com/InterClubNYC" aria-label="Twitter link" target="_blank" rel="noopener noreferrer" title="X (Twitter)">
+            <i class="fab fa-twitter social-button-large"></i>
+          </a>
+        </li>
+        <li>
+            <a href="mailto: interclubmanhattan@gmail.com" aria-label="Email link" target="_blank" rel="noopener noreferrer" title="Email">
+              <i class="fa-solid fa-envelope-open-text social-button-large"></i>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="about" id="about">
+    <h2 id="who">Meet our Team</h2>
+    <p>Started by a small group of friends and now more than 200 brothers and sisters of the world in Manhattan</p> 
+    <p>From watching our Nerazzurri together, meeting our Inter Legends, representing our club, and flying to the stadium to live those unforgettable moments - we are INTER in NYC</p>
+    <div class="board">
+      <div id="board"></div>
+      <div class="card">President</div>
+      <div class="card">Tresurer</div>
+      <div class="card">...</div>
+      <div class="card">...</div>
+    </div>
   </section>
 
   <footer class="footer">

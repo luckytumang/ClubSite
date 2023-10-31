@@ -25,5 +25,9 @@ window.addEventListener('resize', () => {
     navbarToggle.setAttribute('aria-expanded', false);
   }
 });
+
   //Intended to stop bubbling up clicks to navbarMenu
-  // navbarLinksContainer.addEventListener('click', (e) => e.stopPropagation());
+if (window.innerWidth >= 800) {
+  navbarLinksContainer.addEventListener('click', (e) => e.stopPropagation());
+}
+  
