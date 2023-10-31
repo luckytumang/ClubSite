@@ -9,11 +9,10 @@ const toggleNavbarVisibility = () => {
 };
 
 navbarToggle.addEventListener('click', toggleNavbarVisibility);
-
-navbarLinksContainer.addEventListener('click', (e) => e.stopPropagation());
 navbarMenu.addEventListener('click', toggleNavbarVisibility);
 
-// Show nav menu on desktop 
+
+// Show nav menu on desktop on initial load and when resized
 window.addEventListener('load', () => {
   if (window.innerWidth >= 800) {
     navbarToggle.setAttribute('aria-expanded', false); 
@@ -21,8 +20,10 @@ window.addEventListener('load', () => {
 });
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth > 800) {
+  if (window.innerWidth >= 800) {
     isNavbarExpanded = false;
     navbarToggle.setAttribute('aria-expanded', false);
   }
 });
+  //Intended to stop bubbling up clicks to navbarMenu
+  // navbarLinksContainer.addEventListener('click', (e) => e.stopPropagation());
