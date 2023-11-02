@@ -37,8 +37,9 @@ body {
 }
 
 p {
-  margin-bottom: 8px;
+  margin-bottom: 1rem;
   padding: .25rem;
+  margin-inline: 2rem;
 }
 
 h1, h2, h3 {
@@ -49,6 +50,26 @@ h1, h2, h3 {
 } 
 
 /* Header/navbar - Responsive design*/
+.banner {
+  grid-area: banner;
+  display: flex;
+  padding: .3rem;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--cl-white);
+}
+
+.banner p,
+.banner a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.banner p:hover {
+  text-decoration: underline;
+}
+
 .header {
   grid-area: header;
 }
@@ -61,7 +82,6 @@ h1, h2, h3 {
   top: 0;
   left: 0;
   right: 0;
-  /* backdrop-filter: blur(5px); */
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.55);
 }
 
@@ -232,6 +252,14 @@ h1, h2, h3 {
 }
 
 /* Main Content sections */
+section::before {
+  content: "";
+  display: block;
+  height: 12vh; /* height of your navbar */
+  margin-top: -12vh; /* negative value of navbar height */
+  visibility: hidden;
+}
+
 .hero {
   grid-area: hero;
   background-image: url('img/Group.jpg');
@@ -407,7 +435,7 @@ h1, h2, h3 {
 
 .member {
   grid-area: member;
-  padding: 1rem;
+  /* padding: 1rem; */
   background-color: var(--cl-inter-yellow);
   color: var(--cl-inter-blue);
   text-align: center;
@@ -427,9 +455,10 @@ h1, h2, h3 {
   .grid-container-body {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto minmax(100vh, 100vh) auto; 
+    grid-template-rows: 12vh auto minmax(100vh, 100vh) auto; 
     grid-template-areas:
       'header header header'
+      'banner banner banner'
       'hero hero hero'
       'article article aside'
       'team team team'
@@ -467,8 +496,10 @@ h1, h2, h3 {
 @media (max-width: 800px) {
   .grid-container-body {
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(88vh, 100vh) auto;
+    grid-template-rows: auto auto minmax(88vh, 100vh) auto;
     grid-template-areas:
+    'header'
+    'banner'
     'hero'
     'article'
     'aside'
@@ -476,19 +507,18 @@ h1, h2, h3 {
     'member'
     'social'
     'about'
-    'footer'
-    'header';
+    'footer';
   }
 
   #navbar {
-    bottom: 0;
+    /* bottom: 0; */
     top: auto;
   }
   
   #navbar-menu {
     position: fixed;
-    top: 0;
-    bottom: var(--navbar-height);
+    top: var(--navbar-height);
+    /* bottom: var(--navbar-height); */
     left: 0;
     right: 0;
     opacity: 0;
@@ -505,13 +535,13 @@ h1, h2, h3 {
     
     margin-block: 0rem;
     width: 100%;
-    top: calc(- var(--navbar-height));
-    bottom: 0;
+    /* top: var(--navbar-height); */
+    /* bottom: 0; */
 
     transition: all 250ms ease;
   }
   
-  #end {
+  /* #end {
     padding-bottom: 12vh;
-  }
+  } */
 }
