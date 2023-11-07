@@ -5,6 +5,8 @@
   --cl-inter-yellow: #FFDC3C;
   --cl-white: #FFFFFF;
   --cl-blue-focus: hsla(229, 100%, 31%, 0.8);
+
+  --navbar-height: 12vh;
 }
 
 * {
@@ -13,6 +15,13 @@
   font: inherit;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-snap-type: both mandatory;
+  scroll-padding-top: var(--navbar-height);
 }
 
 img {
@@ -56,7 +65,10 @@ h1, h2, h3 {
   padding: .3rem;
   justify-content: center;
   text-decoration: none;
-  color: var(--cl-white);
+
+  color: var(--cl-inter-blue);
+  font-weight: bold;
+  background-color: #FFDC3C;
 }
 
 .banner p,
@@ -75,7 +87,6 @@ h1, h2, h3 {
 }
 
 #navbar {
-  --navbar-height: 12vh;
   position: fixed;
   height: var(--navbar-height);
   background-color: var(--cl-inter-black);
@@ -400,13 +411,18 @@ section::before {
   font-size: clamp(1rem, 5vw + .5rem, 1.5rem);
   color: var(--cl-white);
   padding: 1rem;
-  margin-inline: .5rem;
+  margin-inline: 1rem;
 
   outline: 2px solid var(--cl-blue-focus);
   border-radius: 2rem;
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
+
+.social-button-large {
+  height: 56px;
+  width: 56px;
+} 
 
 .social-button-large:hover, 
 .social-button-large:focus,
@@ -540,8 +556,4 @@ section::before {
 
     transition: all 250ms ease;
   }
-  
-  /* #end {
-    padding-bottom: 12vh;
-  } */
 }
