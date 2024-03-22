@@ -1,3 +1,3 @@
 # Club site
 
-Getting Started
+Simple website for a sports team fan club

@@ -1,185 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Inter Club Manhattan : Home</title>
-  <link rel="icon" href="img/favicon.ico">
-
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/cf0d147391.js" crossorigin="anonymous"></script>
-</head>
-
-<body class="grid-container-body" id="home">
-  <a class="banner" href="#member" title="Membership information">
-    <p>Membership campaign for the 23/24 season is open! Click to learn more</p>
-  </a>
-  <header class="header" id="navbar">
-    <nav class="navbar-container container">
-      <div class="home-link">
-        <a class="home-link" href="index.html" title="IC Manhattan">
-          <div class="navbar-logo">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 56 56" class="css-0"><path fill="currentColor" fill-rule="evenodd" d="M0 28C0 12.533 12.533 0 28 0s28 12.533 28 28-12.533 28-28 28S0 43.467 0 28zm4 0c0 13.253 10.747 24 24 24s24-10.747 24-24S41.253 4 28 4 4 14.747 4 28zm37.121-9.16l1.894-4.053A19.915 19.915 0 0148 28.007c0 5.353-2.106 10.22-5.533 13.806l-.52-5.966A15.93 15.93 0 0044.001 28c0-3.407-1.066-6.56-2.88-9.16zM30.027 43.873V12.127c1.68.213 3.28.686 4.753 1.38l1.694-3.627A19.91 19.91 0 0028 8c-3.026 0-5.9.673-8.473 1.88l1.693 3.627a16.035 16.035 0 014.814-1.387v31.76a16.003 16.003 0 01-4.514-1.247l-.366 4.167c2.133.773 4.44 1.2 6.846 1.2a19.9 19.9 0 006.874-1.213l-.367-4.167a15.728 15.728 0 01-4.48 1.253zM8 28a19.91 19.91 0 014.986-13.213l1.894 4.06A15.915 15.915 0 0012 28c0 2.867.753 5.553 2.073 7.873l-.52 5.954A19.911 19.911 0 018 28zm30.514-8.367l2.98-6.393a19.913 19.913 0 00-3.28-2.433L32.04 24.06v9.467l3.094-6.634L36.8 45.967a20.028 20.028 0 003.8-2.434l-2.086-23.9zM17.765 10.82l6.274 13.46h.013v9.467l-3.18-6.82-1.666 19.04a20.018 20.018 0 01-3.8-2.434l2.073-23.74.006-.113-2.993-6.42c1-.92 2.1-1.74 3.273-2.44z" clip-rule="evenodd"></path></svg>
-          </div>
-        </a>
-        <a class="home-link" href="index.html" title="IC Manhattan">
-          <div class="navbar-brand">Inter Club Manhattan</div>
-        </a>
-      </div>
-
-      <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle menu">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Inter Club Manhattan: Home of Manhattan Interisti" />
+    <meta name="keywords" content="Inter Milan, Nerazzurri, Fan Club, NYC, Manhattan" />
+    <title>Inter Club Manhattan: Home</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/icons.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+  </head>
+  <body class="grid-container-body" id="home">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="header" id="navbar">
+      <nav class="navbar-container container">
+        <div class="home-link">
+          <a class="home-link" href="index.html" title="IC Manhattan" aria-label="Inter Club Manhattan">
+            <div class="navbar-logo">
+              <svg>
+                <!-- Inline SVG Code for Inter Logo -->
+              </svg>
+            </div>
+            <div class="navbar-brand">Inter Club Manhattan</div>
+          </a>
+        </div>
+        <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="navbar-menu" aria-labelledby="navbar-toggle">
           <ul class="navbar-links">
-              <li class="navbar-item">
-                <a class="navbar-link" href="#home">Home</a>
-              </li>
-              <li class="navbar-item">
-                <a class="navbar-link" href="#member">Membership</a>
-              </li>
-              <li class="navbar-item">
-                <a class="navbar-link" href="#social">Social</a>
-              </li>
-              <li class="navbar-item">
-                <a class="navbar-link" href="#about">About</a>
-              </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#home">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#membership">Membership</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#social">Social</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#about">About</a>
+            </li>
           </ul>
-      </div>
-    </nav>
-  </header>
-  
-  <section class="hero">
-    <h1 id="heroname">I M <span id="inter">INTER</span>
-      <!-- <span id="manhattan">MANHATTAN</span> -->
-    </h1> 
-  </section>
-
-  <article class="article">
-    <h2 id="name">Inter Club Manhattan</h2>
-    <div id="subname">Riccardo Ferri</div>
-    
-    <div class="mainbuttons">
-      <a id="mainlink" href="#member">
-        <button id="join" title="Membership">Join Now</button>
-      </a>
-    </div>
-  </article>
-
-  <section class="aside">
-    <h2 id="recent">We are the Manhattan Interisti</h2>
-    <p>200+ Brothers of the World in Manhattan NYC, come together to support OUR Inter</p>
-    <p>Welcome to the home of IC Manhattan, your Inter Club in the Big Apple! 🍎🗽</p>
-    <p>Join the biggest and fastest growing Inter Club in the USA</p>
-  </section>
-
-  <section class="team" id="ourteam">
-    <h2 id="team">What We Do</h2>
-    <p>Live and share you passion towards our glorious Club with your brothers and sisters of the world, and enjoy exclusive benefis dedicated only to Inter Club members</p> 
-    <div class="benefits">
-      <p>Ticketing</p>
-      <p>Discounts on merchandising</p>
-      <p>Two Special Matches with lots of dedicated activities</p>
-      <p>Unforgettable experiences with Players and Legends</p> 
-      <p>Contest, events, partners' offers and much more!</p>
-    </div>
-  </section>
-  
-  <section class="member" id="member">
-    <h2>Join us Now</h2>
-    <p>Don't wait any longer, join today in a few simple steps</p>
-    <!-- <img class="member-image" src="img/Dominet Milan.jpg" alt="Dominet Milan"> -->
-    <div class="steps-container">
-      <p class="steps">1. Complete your information in this Inter Club form</p>
-      <p class="steps">2. Submit Membership fee payment at here</p>
-      <p class="steps">3. Send us a confirmation that you've completed these steps at interclubmanhattan@gmail.com</p>
-      <p>All done - you are ready to enjoy your membership benefits!</p>
-    </div>
-  </section>
-  
-  <section class="social" id="social">
-    <h2 id="touch">Connect for the latest from YOUR Club</h2>
-
-    <div>
-      <ul class="social-main-container">
-        <li>
-          <a href="https://www.instagram.com/interclubmanhattannyc" aria-label="Instagram link" target="_blank" rel="noopener noreferrer" title="Instagram">
-            <i class="fa-brands fa-instagram social-button-large"></i>
+        </div>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section class="hero">
+        <h1 id="heroname">I M <span id="inter">INTER</span></h1>
+      </section>
+      <article class="article">
+        <h2 id="name">Inter Club Manhattan</h2>
+        <div id="subname">Riccardo Ferri</div>
+        <div class="mainbuttons">
+          <a id="mainlink" href="#membership">
+            <button id="join" title="Membership">Join Now</button>
           </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/interclubmanhattan" aria-label="Facebook link" target="_blank" rel="noopener noreferrer" title="Facebook">
-            <i class="fab fa-facebook social-button-large"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.twitter.com/InterClubNYC" aria-label="Twitter link" target="_blank" rel="noopener noreferrer" title="X (Twitter)">
-            <i class="fab fa-twitter social-button-large"></i>
-          </a>
-        </li>
-        <li>
-            <a href="mailto: interclubmanhattan@gmail.com" aria-label="Email link" target="_blank" rel="noopener noreferrer" title="Email">
-              <i class="fa-solid fa-envelope-open-text social-button-large"></i>
-            </a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  
-  <section class="about" id="about">
-    <h2 id="who">Meet our Team</h2>
-    <p>Started by a small group of friends and now more than 200 brothers and sisters of the world in Manhattan</p> 
-    <p>From watching our Nerazzurri together, meeting our Inter Legends, representing our club, and flying to the stadium to live those unforgettable moments - we are your Inter HQ in NYC</p>
-    <div class="board">
-      <div id="board"></div>
-      <div class="card">President</div>
-      <div class="card">Treasurer</div>
-      <div class="card">...</div>
-      <div class="card">...</div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <!-- <div>interclubmanhattan@gmail.com - (XXX) XXX-XXXX</div> -->
-    <div>
+        </div>
+      </article>
+      <aside class="aside">
+        <h2 id="recent">We are the Manhattan Interisti</h2>
+        <p>200+ Brothers of the World in Manhattan NYC, come together to support OUR Inter</p>
+        <p>Welcome to the home of IC Manhattan, your Inter Club in the Big Apple! 🍎🗽</p>
+        <p>Join the biggest and fastest growing Inter Club in the USA</p>
+      </aside>
+      <section class="team" id="ourteam">
+        <h2 id="team">What We Do</h2>
+        <p>Live and share your passion towards our glorious Club with your brothers and sisters of the world, and enjoy exclusive benefits dedicated only to Inter Club members</p>
+        <div class="benefits">
+          <p>Ticketing</p>
+          <p>Discounts on merchandising</p>
+          <p>Two Special Matches with lots of dedicated activities</p>
+          <p>Unforgettable experiences with Players and Legends</p>
+          <p>Contests, events, partners' offers and much more!</p>
+        </div>
+      </section>
+      <section class="member" id="membership">
+        <h2>Join us Now</h2>
+        <p>Don't wait any longer, join today in a few simple steps</p>
+        <div class="steps-container">
+          <p class="steps">1. Complete your information in this Inter Club form</p>
+          <p class="steps">2. Submit Membership fee payment at here</p>
+          <p class="steps">3. Send us a confirmation that you've completed these steps at interclubmanhattan@gmail.com</p>
+          <p>All done - you are ready to enjoy your membership benefits!</p>
+        </div>
+      </section>
+      <section class="social" id="social">
+        <h2 id="touch">Connect for the latest from YOUR Club</h2>
+        <div>
+          <ul class="social-main-container">
+            <li>
+              <a href="https://www.instagram.com/interclubmanhattannyc" aria-label="Instagram link" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <svg>
+                  <!-- Inline SVG Code for Instagram Icon -->
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/interclubmanhattan" aria-label="Facebook link" target="_blank" rel="noopener noreferrer" title="Facebook">
+                <svg>
+                  <!-- Inline SVG Code for Facebook Icon -->
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/InterClubNYC" aria-label="Twitter link" target="_blank" rel="noopener noreferrer" title="Twitter">
+                <svg>
+                  <!-- Inline SVG Code for Twitter Icon -->
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:interclubmanhattan@gmail.com" aria-label="Email link" target="_blank" rel="noopener noreferrer" title="Email">
+                <svg>
+                  <!-- Inline SVG Code for Email Icon -->
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <h2 id="who">Meet our Team</h2>
+        <p>Started by a small group of friends and now more than 200 brothers and sisters of the world in Manhattan</p>
+        <p>From watching our Nerazzurri together, meeting our Inter Legends, representing our club, and flying to the stadium to live those unforgettable moments - we are your Inter HQ in NYC</p>
+        <div class="board">
+          <div id="board"></div>
+          <div class="card">President</div>
+          <div class="card">Treasurer</div>
+          <div class="card">...</div>
+          <div class="card">...</div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div>
         <ul class="social-links">
           <li>
             <a href="https://www.instagram.com/interclubmanhattannyc" aria-label="Instagram link" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-instagram"></i>
+              <svg>
+                <!-- Inline SVG Code for Instagram Icon -->
+              </svg>
             </a>
           </li>
           <li>
             <a href="https://www.facebook.com/interclubmanhattan" aria-label="Facebook link" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-facebook"></i>
+              <svg>
+                <!-- Inline SVG Code for Facebook Icon -->
+              </svg>
             </a>
           </li>
           <li>
             <a href="https://www.twitter.com/InterClubNYC" aria-label="Twitter link" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-twitter"></i>
+              <svg>
+                <!-- Inline SVG Code for Twitter Icon -->
+              </svg>
             </a>
           </li>
           <li>
-              <a href="mailto: interclubmanhattan@gmail.com" aria-label="Email link" target="_blank" rel="noopener noreferrer">
-                <i class="fa-solid fa-envelope-open-text"></i>
-              </a>
+            <a href="mailto:interclubmanhattan@gmail.com" aria-label="Email link" target="_blank" rel="noopener noreferrer">
+              <svg>
+                <!-- Inline SVG Code for Email Icon -->
+              </svg>
+            </a>
           </li>
         </ul>
         <div id="endtag">
           <div>©2023 - Made with 💙🖤 by Orlen & the team from</div>
           <div>Inter Club Manhattan Riccardo Ferri</div>
-        </div> 
-    </div>
-
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
-  <script src="index.js"></script>
-
-</body>
-
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

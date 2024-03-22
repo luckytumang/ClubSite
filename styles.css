@@ -1,9 +1,9 @@
 /* General styles */
 :root {
-  --cl-inter-blue: #011ea0;;
+  --cl-inter-blue: #011ea0;
   --cl-inter-black: #000000;
-  --cl-inter-yellow: #FFDC3C;
-  --cl-white: #FFFFFF;
+  --cl-inter-yellow: #ffdc3c;
+  --cl-white: #ffffff;
   --cl-blue-focus: hsla(229, 100%, 31%, 0.8);
 
   --navbar-height: 12vh;
@@ -47,28 +47,46 @@ body {
 
 p {
   margin-bottom: 1rem;
-  padding: .25rem;
+  padding: 0.25rem;
   margin-inline: 2rem;
 }
 
-h1, h2, h3 {
-  font-size: clamp(1rem, 5vw + 1rem , 2rem);
+h1,
+h2,
+h3 {
+  font-size: clamp(1rem, 5vw + 1rem, 2rem);
   font-weight: bold;
   text-align: center;
   margin-bottom: 1.5rem;
-} 
+}
 
-/* Header/navbar - Responsive design*/
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: var(--cl-inter-yellow);
+  color: var(--cl-inter-blue);
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s ease-in-out;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header/navbar - Responsive design */
 .banner {
   grid-area: banner;
   display: flex;
-  padding: .3rem;
+  padding: 0.3rem;
   justify-content: center;
   text-decoration: none;
 
   color: var(--cl-inter-blue);
   font-weight: bold;
-  background-color: #FFDC3C;
+  background-color: #ffdc3c;
 }
 
 .banner p,
@@ -94,6 +112,7 @@ h1, h2, h3 {
   left: 0;
   right: 0;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.55);
+  z-index: 10;
 }
 
 .navbar-container {
@@ -132,11 +151,10 @@ h1, h2, h3 {
 
 .navbar-link:is(:focus, :hover) {
   color: var(--cl-inter-yellow);
-  /* background-color: var(--cl-blue-focus); */
   font-weight: 700;
 }
 
-.navbar-logo svg{
+.navbar-logo svg {
   border-radius: 50%;
   margin-inline: 0.5em;
   width: 3rem;
@@ -168,22 +186,22 @@ h1, h2, h3 {
   transition: all 300ms ease-in-out;
 }
 
-#navbar-toggle[aria-expanded='true'] .icon-bar:is(:first-child, :last-child) {
+#navbar-toggle[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
   position: absolute;
   margin: 0;
   width: 30px;
 }
 
-#navbar-toggle[aria-expanded='true'] .icon-bar:first-child {
+#navbar-toggle[aria-expanded="true"] .icon-bar:first-child {
   transform: rotate(45deg);
 }
 
-#navbar-toggle[aria-expanded='true'] .icon-bar:nth-child(2) {
+#navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(2) {
   opacity: 0;
   transition: all 300ms ease;
 }
 
-#navbar-toggle[aria-expanded='true'] .icon-bar:last-child {
+#navbar-toggle[aria-expanded="true"] .icon-bar:last-child {
   transform: rotate(-45deg);
 }
 
@@ -197,7 +215,7 @@ h1, h2, h3 {
   visibility: hidden;
 }
 
-#navbar-toggle[aria-expanded='true'] + #navbar-menu {
+#navbar-toggle[aria-expanded="true"] + #navbar-menu {
   background-color: var(--cl-blue-focus);
   opacity: 1;
   visibility: visible;
@@ -217,7 +235,7 @@ h1, h2, h3 {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-#navbar-toggle[aria-expanded='true'] + #navbar-menu .navbar-links {
+#navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
   padding: 2rem;
 }
 
@@ -225,8 +243,6 @@ h1, h2, h3 {
   font-size: clamp(1rem, 5vw, 2rem);
   font-weight: bold;
   text-shadow: 1px 1px 1px var(--cl-inter-black);
-  /* margin-inline-start: 0rem; */
-  padding-left: 0;
 }
 
 /* Footer */
@@ -246,7 +262,7 @@ h1, h2, h3 {
   padding-block: 1.5rem;
 }
 
-.social-links i {
+.social-links svg {
   margin: 0 1rem;
   padding: 0;
   font-size: 1.5rem;
@@ -254,11 +270,11 @@ h1, h2, h3 {
   transition: all 300ms ease-in-out;
 }
 
-.social-links i:hover,
-.social-links i:focus,
-.social-links i:active {
+.social-links svg:hover,
+.social-links svg:focus,
+.social-links svg:active {
   color: var(--cl-inter-yellow);
-  scale: 1.3;
+  transform: scale(1.3);
   transition: all 300ms ease-in-out;
 }
 
@@ -273,13 +289,11 @@ section::before {
 
 .hero {
   grid-area: hero;
-  background-image: url('img/Group.jpg');
-  /* padding: 2rem; */
+  background-image: url("../img/Group.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* overflow: hidden; */
 
   display: flex;
   justify-content: center;
@@ -287,10 +301,8 @@ section::before {
 }
 
 #heroname {
-  font-size: clamp(1.5rem, 5vw + 2rem , 8rem);
+  font-size: clamp(1.5rem, 5vw + 2rem, 8rem);
   font-weight: bolder;
-  /* text-align: center;
-  vertical-align: middle; */
   text-shadow: 3px 3px 3px var(--cl-inter-black);
 }
 
@@ -298,7 +310,7 @@ section::before {
   grid-area: article;
   padding: 20px;
   text-align: center;
-  background-image: url('img/InterClub.jpg');
+  background-image: url("../img/InterClub.jpg");
   background-size: contain;
   background-position: center;
 
@@ -308,7 +320,7 @@ section::before {
 
 #name {
   color: var(--cl-white);
-  font-size: clamp(1.5rem, 5vw + 1.5rem , 4rem);
+  font-size: clamp(1.5rem, 5vw + 1.5rem, 4rem);
   font-weight: bolder;
   text-align: center;
   text-shadow: 2px 2px 2px var(--cl-inter-black);
@@ -316,7 +328,7 @@ section::before {
 
 #subname {
   color: var(--cl-white);
-  font-size: clamp(1.25rem, 5vw + 1rem , 3rem);
+  font-size: clamp(1.25rem, 5vw + 1rem, 3rem);
   font-weight: bold;
   text-align: center;
   text-shadow: 2px 2px 2px var(--cl-inter-black);
@@ -330,8 +342,8 @@ section::before {
 
 #mainlink {
   text-decoration: none;
-  }
-  
+}
+
 #join {
   background-color: var(--cl-inter-yellow);
   color: var(--cl-inter-blue);
@@ -348,7 +360,7 @@ section::before {
   transition: all 300ms ease-in-out;
 }
 
-  #join:hover {
+#join:hover {
   background-color: transparent;
   color: var(--cl-white);
   font-weight: bold;
@@ -380,7 +392,7 @@ section::before {
   grid-area: social;
   padding: 20px;
   text-align: center;
-  background-image: url('img/Coroniamo Sogno.jpg');
+  background-image: url("../img/Coroniamo Sogno.jpg");
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -406,9 +418,9 @@ section::before {
   list-style-type: none;
 }
 
-.social-main-container i {
+.social-main-container svg {
   background-color: var(--cl-blue-focus);
-  font-size: clamp(1rem, 5vw + .5rem, 1.5rem);
+  font-size: clamp(1rem, 5vw + 0.5rem, 1.5rem);
   color: var(--cl-white);
   padding: 1rem;
   margin-inline: 1rem;
@@ -422,14 +434,13 @@ section::before {
 .social-button-large {
   height: 56px;
   width: 56px;
-} 
+}
 
-.social-button-large:hover, 
+.social-button-large:hover,
 .social-button-large:focus,
 .social-button-large:active {
   background-color: var(--cl-white);
   color: var(--cl-inter-blue);
-  /* padding-inline: 1.2rem; */
   border-radius: 1.5rem;
   outline: 2px solid var(--cl-blue-focus);
   font-weight: bold;
@@ -440,18 +451,10 @@ section::before {
   grid-area: team;
   padding: 1rem;
   text-align: center;
-
-  /* background-color: var(--cl-inter-blue);
-  color: var(--cl-white); */
-
-  /* background-image: url(img/zebraPattern.svg);
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 .member {
   grid-area: member;
-  /* padding: 1rem; */
   background-color: var(--cl-inter-yellow);
   color: var(--cl-inter-blue);
   text-align: center;
@@ -471,25 +474,28 @@ section::before {
   .grid-container-body {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 12vh auto minmax(100vh, 100vh) auto; 
+    grid-template-rows: 12vh auto minmax(100vh, 100vh) auto;
     grid-template-areas:
-      'header header header'
-      'banner banner banner'
-      'hero hero hero'
-      'article article aside'
-      'team team team'
-      'member member member'
-      'social social social'
-      'about about about'
-      'footer footer footer'
+      "header header header"
+      "banner banner banner"
+      "hero hero hero"
+      "article article aside"
+      "team team team"
+      "member member member"
+      "social social social"
+      "about about about"
+      "footer footer footer";
   }
 
-  #navbar-toggle, #navbar-toggle[aria-expanded='false']  {
+  #navbar-toggle,
+  #navbar-toggle[aria-expanded="false"] {
     display: none;
     transition: all 200ms ease-in-out;
   }
 
-  #navbar-menu, #navbar-toggle[aria-expanded='true'] + #navbar-menu, #navbar-toggle[aria-expanded='true'] + #navbar-menu {
+  #navbar-menu,
+  #navbar-toggle[aria-expanded="true"] + #navbar-menu,
+  #navbar-toggle[aria-expanded="true"] + #navbar-menu {
     visibility: visible;
     opacity: 1;
     position: static;
@@ -497,7 +503,7 @@ section::before {
     height: 100%;
   }
 
-  #navbar-toggle[aria-expanded='false'] + #navbar-menu .navbar-links {
+  #navbar-toggle[aria-expanded="false"] + #navbar-menu .navbar-links {
     margin: 0;
     padding: 0;
     box-shadow: none;
@@ -514,27 +520,25 @@ section::before {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto minmax(88vh, 100vh) auto;
     grid-template-areas:
-    'header'
-    'banner'
-    'hero'
-    'article'
-    'aside'
-    'team'
-    'member'
-    'social'
-    'about'
-    'footer';
+      "header"
+      "banner"
+      "hero"
+      "article"
+      "aside"
+      "team"
+      "member"
+      "social"
+      "about"
+      "footer";
   }
 
   #navbar {
-    /* bottom: 0; */
     top: auto;
   }
-  
+
   #navbar-menu {
     position: fixed;
     top: var(--navbar-height);
-    /* bottom: var(--navbar-height); */
     left: 0;
     right: 0;
     opacity: 0;
@@ -542,17 +546,15 @@ section::before {
     box-shadow: 0px 2px 5px var(--cl-inter-yellow);
 
     -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);    
+    backdrop-filter: blur(5px);
   }
 
-  .navbar-links{
+  .navbar-links {
     background-color: var(--cl-inter-black);
     font-size: 1.3rem;
-    
+
     margin-block: 0rem;
     width: 100%;
-    /* top: var(--navbar-height); */
-    /* bottom: 0; */
 
     transition: all 250ms ease;
   }
